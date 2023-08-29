@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+    font-family: 'Lexend Deca', sans-serif;
+}
+@import "./block/fonts";
+@import "./block/variables";
+@import "./block/mixin";
+.container{
+    max-width: 1166px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+@import "./block/header";
+@import "./block/services";
+@import "./block/about";

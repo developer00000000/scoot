@@ -1,0 +1,36 @@
+.about{
+    margin-top: 200px;
+    background-image: url('../../images/background.sec.jpg');
+    background-repeat: no-repeat;
+    background-position: right;
+    
+    &__us{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+        
+       
+    }
+    &__us__main{
+        h3{
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 48px;
+            letter-spacing: -2.14px;
+            color: $title-color;
+            font-family: $title-fonts;
+            max-width: 430px;
+        }
+        p{
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            color: $primary-color;
+            max-width: 400px;
+            padding-top: 24px;
+            padding-bottom: 40px;
+        }
+    }
+
+}

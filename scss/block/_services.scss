@@ -1,0 +1,75 @@
+.services{
+    margin-top: 160px;
+    background-image: url('../../images/lina.bg.jpg');
+    background-repeat: no-repeat;
+    background-position-y: 50px;
+
+    @include for-tablet{
+        background-image: none;
+        margin-top: 0;
+
+    }
+
+    &__box{
+        display: flex;
+        column-gap: 30px;
+
+        @include for-tablet{
+            display: block;
+            padding-top: 122px;
+        }
+    }
+    &__blog{
+        @include for-tablet{
+            display: flex;
+            justify-content: space-around;
+        }
+        @include for-phone{
+            display: block;
+            text-align: center;
+        }
+
+        &__img{
+                  @include for-phone{
+                    width: 56px;
+                    height: 56px;
+                  }
+            
+        }
+
+        h3{
+            font-family: $title-fonts;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+            color: $title-color;
+            padding-top: 40px;
+            letter-spacing: -1.07px;
+
+            @include for-phone{
+                padding-top: 24px;
+                font-size: 20px;
+                line-height: 28px;
+            }
+
+        }
+        p{
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            color: $primary-color;
+            max-width: 325px;
+            padding-top: 27px;
+
+            @include for-tablet{
+                max-width: 380px;
+            }
+            @include for-phone{
+                max-width: 291px;
+                margin: 0 auto; 
+                padding-top: 24px;  
+                padding-bottom: 48px;          
+            }
+        }
+    }
+}
